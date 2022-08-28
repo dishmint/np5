@@ -15,7 +15,15 @@ struct Model {
 }
 
 fn model(app: &App) -> Model {
-    let morpher = Morpher::new(app.window_rect(), 50.0, 0.0, 5.0);
+    let win = app.window_rect();
+    let wx = win.wh().x * 0.08;
+    let morpher = Morpher::new(
+        win
+        , vec2(wx, wx)
+        , 0.0
+        , 5.0
+        , 360
+    );
     Model { morpher }
 }
 
@@ -25,6 +33,8 @@ fn update(_app: &App, model: &mut Model, _update: Update) {
 
 fn view(app: &App, model: &Model, frame: Frame){
     let draw = app.draw();
+    draw.background().color(BLACK);
+
     model.morpher.display(&draw);
     draw.to_frame(app, &frame).unwrap();
 }
