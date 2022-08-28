@@ -7,6 +7,7 @@ fn main() {
     nannou::app(model)
         .update(update)
         .simple_window(view)
+        .size(500,500)
         .run();
 }
 

@@ -52,7 +52,8 @@ impl Morpher {
         draw.polygon()
                 .color(BLACK)
                 .stroke(ORANGERED)
-                .join_round()
+                // .join_round()
+                .join_miter()
                 .points(points);
     }
 }
