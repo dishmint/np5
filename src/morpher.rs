@@ -28,7 +28,6 @@ impl Morpher {
         let points =  (0..self.point_count).map(|i| {
             let idx = i as f32;
             let fx = (idx/360.0) * TAU;
-            // let clr = rgba(255.0,100.0, 0.0, idx);
             let idc = fx.cos();
             let ids = fx.sin();
             let xb = self.dimensions.x / 100.;
@@ -45,10 +44,8 @@ impl Morpher {
                     (2.0 * self.radius.y) * ids + rm
                 );
                 pt2(pt.x,pt.y)
-                // (pt2(pt.x,pt.y), clr)
             } else {
                 pt2(pt.x,pt.y)
-                // (pt2(pt.x,pt.y), clr)
             }
         });
 
@@ -57,6 +54,5 @@ impl Morpher {
                 .stroke(ORANGERED)
                 .join_round()
                 .points(points);
-                // .points_colored(points);
     }
 }
