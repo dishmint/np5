@@ -75,8 +75,9 @@ impl Morpher {
         });
 
         draw.polygon()
-                .color(BLACK)
+                .no_fill()
                 .stroke(ORANGERED)
+                // .stroke(rgba(255.0,69.0,0.0,150.0))
                 .join_miter()
                 .points(points)
                 /* .rotate(circ/2.) */;

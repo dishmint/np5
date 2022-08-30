@@ -39,7 +39,14 @@ fn update(_app: &App, model: &mut Model, _update: Update) {
 
 fn view(app: &App, model: &Model, frame: Frame){
     let draw = app.draw();
-    draw.background().color(BLACK);
+    let dims = app.window_rect().w_h();
+
+    if app.elapsed_frames() == 1 {
+        draw.background().color(BLACK);
+    }
+
+    draw.rect().w_h(dims.0, dims.1).color(srgba(0.0,0.0,0.0,0.1));
+
 
     model.morpher.display(&draw);
     draw.to_frame(app, &frame).unwrap();
