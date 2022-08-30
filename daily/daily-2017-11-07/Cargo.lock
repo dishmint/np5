@@ -428,7 +428,7 @@ dependencies = [
 
 [[package]]
 name = "daily-2017-11-07"
-version = "0.1.0"
+version = "0.1.5"
 dependencies = [
  "nannou",
 ]
