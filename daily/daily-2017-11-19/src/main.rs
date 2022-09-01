@@ -16,8 +16,8 @@ struct Model {
 }
 
 fn model(app: &App) -> Model {
-    let win = app.window_rect();
-    let shifter = Shifter::new(win, 1.0, 1.0);
+    let _win = app.window_rect();
+    let shifter = Shifter::new(1.0, 1.0);
     Model {shifter}
 }
 
@@ -29,14 +29,22 @@ fn update(app: &App, model: &mut Model, _update: Update) {
 fn view(app: &App, model: &Model, frame: Frame){
     let draw = app.draw();
     let dims = app.window_rect().w_h();
+    let center = app.window_rect().x_y();
+
+     // draw.background().color(BLACK);
 
     if app.elapsed_frames() == 1 {
         draw.background().color(BLACK);
     }
 
-    draw.rect().w_h(dims.0, dims.1).color(srgba(0.0,0.0,0.0,0.1));
-    
     model.shifter.view(&draw);
+
+    draw.rect()
+        .xy(vec2(center.0, center.1))
+        .w_h(dims.0, dims.1)
+        .color(srgba(0.0,0.0,0.0, model.shifter.alpha));
+
+    // draw.text("Shifter").xy(vec2(center.0, center.1)).color(WHITE);
 
     draw.to_frame(app, &frame).unwrap();
 }
