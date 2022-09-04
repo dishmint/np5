@@ -18,12 +18,9 @@ impl CircleSet {
     }
 
     pub fn update(&mut self, escelator: f32, efx: f32) {
-        // println!("UPDATE");
-        self.wh.clear();
-        // println!("CLEARED WH");
         for i in 0..self.levels {
             let wx = escelator * (i as f32 * efx);
-            self.wh.push(vec2(wx, wx));
+            self.wh[i as usize] = vec2(wx, wx);
         }
     }
 
