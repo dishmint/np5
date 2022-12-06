@@ -1,0 +1,9 @@
+/Users/faizonzaman/Documents/Programs/comp-exp/lrn/explore/rust/nannou/np5/daily/daily-2018-04-09/target/release/deps/libfutures_macro-3a3755d3f70a24ab.dylib: /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/lib.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/executor.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/join.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/select.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/stream_select.rs
+
+/Users/faizonzaman/Documents/Programs/comp-exp/lrn/explore/rust/nannou/np5/daily/daily-2018-04-09/target/release/deps/futures_macro-3a3755d3f70a24ab.d: /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/lib.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/executor.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/join.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/select.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/stream_select.rs
+
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/lib.rs:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/executor.rs:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/join.rs:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/select.rs:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.24/src/stream_select.rs:

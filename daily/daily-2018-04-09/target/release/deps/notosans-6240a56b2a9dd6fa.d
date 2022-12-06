@@ -1,0 +1,13 @@
+/Users/faizonzaman/Documents/Programs/comp-exp/lrn/explore/rust/nannou/np5/daily/daily-2018-04-09/target/release/deps/notosans-6240a56b2a9dd6fa.rmeta: /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/src/lib.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Bold.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-BoldItalic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Italic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Regular.ttf
+
+/Users/faizonzaman/Documents/Programs/comp-exp/lrn/explore/rust/nannou/np5/daily/daily-2018-04-09/target/release/deps/libnotosans-6240a56b2a9dd6fa.rlib: /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/src/lib.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Bold.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-BoldItalic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Italic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Regular.ttf
+
+/Users/faizonzaman/Documents/Programs/comp-exp/lrn/explore/rust/nannou/np5/daily/daily-2018-04-09/target/release/deps/notosans-6240a56b2a9dd6fa.d: /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/src/lib.rs /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Bold.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-BoldItalic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Italic.ttf /Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Regular.ttf
+
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/src/lib.rs:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Bold.ttf:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-BoldItalic.ttf:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Italic.ttf:
+/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0/fonts/NotoSans-Regular.ttf:
+
+# env-dep:CARGO_MANIFEST_DIR=/Users/faizonzaman/.cargo/registry/src/github.com-1ecc6299db9ec823/notosans-0.1.0
