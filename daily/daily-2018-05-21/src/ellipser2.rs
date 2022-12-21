@@ -1,5 +1,7 @@
+/* TODO: Behavior is not consistent with p5 sketch */
+
 use nannou::prelude::*;
-use nannou::ease::*;
+
 /* STRUCT */
 pub struct Ellipser2{
     size: f32,
