@@ -3,9 +3,11 @@ use nannou::{prelude::*, color::{IntoLinSrgba, Shade}};
 pub struct BlockMove{
     window: Rect,
     position: Vec2,
-    width: f32,
+    pub width: f32,
     color: Srgb,
-    tempo: f32,
+    pub beat_time: f32,
+    pub beat_length: f32,
+    pub opt_outline: bool,
 }
 
 fn get_color(win: Rect, pos: Vec2, w_s: f32) -> Srgb {
@@ -29,15 +31,19 @@ impl BlockMove{
     
         let color = get_color(win, position, w_start);
 
-        BlockMove { window: win, position, width: w_start, color, tempo }
+        let beat_time = 0.0;
+        let beat_length = (60.0/tempo) * 1000.0; /* in millis */
+
+        let opt_outline = false;
+        BlockMove { window: win, position, width: w_start, color, beat_time, beat_length, opt_outline }
     }
 
     pub fn update (&mut self, app: &App) {
-        let frac = (app.time.fract() * 10.0).round() / 10.0;
-        let trigger = frac % (60.0/self.tempo);
-        // let trigger = app.elapsed_frames() as f32 % (60.0/self.tempo);
-        if  trigger == 0.0 {
-            // println!("Modded: {trigger}");
+        /* Increase beat_time by time since previous update */
+        self.beat_time += app.duration.since_prev_update.as_millis() as f32;
+
+        /* If beat_time exceeds beat_length then consider this frame a downbeat and compute position */
+        if self.beat_time >= self.beat_length {
             self.position.x += self.width;
             if self.position.x > (self.window.right() - self.width) {
                 self.position.x = self.window.left() + self.width;
@@ -46,6 +52,7 @@ impl BlockMove{
                     self.position.y = self.window.top() - self.width;
                     }
                 }
+            self.beat_time = 0.0;
         }
 
         self.color =  get_color(self.window, self.position, self.width);
@@ -53,12 +60,15 @@ impl BlockMove{
 
     pub fn view (&self, draw: &Draw) {
         let sk: LinSrgba = self.color.into_lin_srgba();         
-        draw.rect()
+        let block = draw.rect()
             .xy(self.position)
             .wh(vec2(self.width, self.width))
-            .stroke_weight(1.0)
-            .stroke_color(sk.lighten(0.075))
             .color(self.color);
+        if self.opt_outline {
+            block
+                .stroke_weight(1.0)
+                .stroke_color(sk.lighten(0.075));
+        }
     }
 
 }

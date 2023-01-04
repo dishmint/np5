@@ -17,7 +17,8 @@ struct Model {
 
 fn model(app: &App) -> Model {
     let size = 0.5;
-    let blockmove = BlockMove::new(app, size, 170.0);
+    let mut blockmove = BlockMove::new(app, size, 250.0);
+    blockmove.opt_outline = false;
 
     Model { blockmove }
 }
@@ -35,8 +36,15 @@ fn view(app: &App, model: &Model, frame: Frame){
 
     model.blockmove.view(&draw);
 
+    // let alpha = model.blockmove.beat_time / model.blockmove.beat_length;
+    // let alpha = 1.0 / (win.w() / model.blockmove.width);
+
     draw.rect()
         .wh(win.wh())
-        .color(srgba(0.0,0.0,0.0,0.04));
+        /* .color(srgba(0.0,0.0,0.0,0.05)); */
+        /* .color(srgba(0.0,0.0,0.0,alpha)); */
+        /* .color(srgba(0.0,0.0,0.0,0.0)); */
+        .color(srgba(0.0,0.0,0.0,0.01));
+        /* .color(srgba(0.0,0.0,0.0,alpha)); */
     draw.to_frame(app, &frame).unwrap();
 }
