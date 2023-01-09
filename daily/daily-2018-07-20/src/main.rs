@@ -18,7 +18,7 @@ struct Model {
     clr_1: Srgba,
     clr_2: Srgba,
 }
-
+// TODO: Use a separate module for box states rather than setting them in Model
 fn model(app: &App) -> Model {
     let win = app.window_rect();
 
@@ -36,7 +36,7 @@ fn update(app: &App, model: &mut Model, _update: Update) {
     let win = app.window_rect();
     let time = app.time * model.rate;
     model.wth_1 = abs((win.right() * 0.5) * time.sin());
-    
+
     let x_bnd = win.right() - (model.wth_1 * 0.5);
     let y_bnd = win.top() - (model.wth_1 * 0.5);
 
